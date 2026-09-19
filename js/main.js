@@ -9,6 +9,21 @@ form.addEventListener("submit", function(event) {
 
     console.log(username);
     console.log(email);
+
+    if (username === "" && email === "") {
+        console.log("Заполните имя и почту");
+    } else if(username === "") {
+        console.log("Введите имя");
+    } else if(email === "") {
+        console.log("Введите почту");
+    } else {
+        console.log("Всё заполнено, идём дальше");
+    }
+
+    let toastAlert = document.querySelector("toast");
+    //создать новый объект: new bootstrap.Toast(элемент)
+    // Комментарии Claude: не понимаю как написать псевдо код
+
 });
 
 
