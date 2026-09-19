@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Financial analysis - помогает анализировать расходы</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col align-self-start">
+  
+    </div>
+    <div class="col align-self-center">
+    	<ul class="nav nav-tabs" id="myTab">
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Зарегистрироваться</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Войти</button>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+
+			<!-- Форма регистрации -->
+		  	<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+		  		<form action="php/login.php" method="POST" class="formRegistration">
+		  			<input type="text" name="usernameRegistration" placeholder="Напишите имя ..." class="inputRegistration">
+		  			<br>
+		  			<input type="text" name="usernameEmailRegistration" placeholder="Напишите почту ..." class="inputRegistration">
+		  			<br>
+		  			<input type="submit" name="submitRegistrtion" value="Отправить" class="btnRegistration">
+		  		</form>
+		  	</div>
+
+		  	<!-- Форма входа -->
+		  	<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+		  	
+		  	</div>
+		</div>
+    </div>
+    <div class="col align-self-end">
+     
+    </div>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/popper.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>
